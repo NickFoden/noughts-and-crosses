@@ -1,21 +1,24 @@
-var playerOne = {
-	one: false;
-	two: false;
-	three: false;
-	four: false;
-	five: false;
-	six: false
-	seven: false; 
-	eight: false; 
-	nine: false;
+$(document).ready(function){
+
+var playerX =[];
+var playerY =[];
+
+var gamePlay = {};
+
+function gameOn(){
+$('.cell').click(function(){
+	$(this).toggleClass('playerOne');
+});
+$('.cell').click(function(){
+	$(this).toggleClass('playerTwo');
+});
+
 }
-var PlayerTwo = {
-		one: false;
-	two: false;
-	three: false;
-	four: false;
-	five: false;
-	six: false
-	seven: false; 
-	eight: false
+
+gameOn();
+
+/*$('.cell').click(function(){
+	$(this).toggleClass('playerOne');
+});*/
+
 }

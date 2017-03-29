@@ -8,7 +8,23 @@
 	width: 100px;
 	height: 100px;
 	background-color: rgb(244,66,194);
-	border-color: black;
 	border-width: 1px;
+}
+
+
+.playerOne{
+	width: 100px;
+	height: 100px;
+	background-color: rgb(36,226,49);
+	border-width: 1px;
+	font-size: 2em;
+}
+
+.playerTwo{
+	width: 100px;
+	height: 100px;
+	background-color: rgb(0,0,0);
+	border-width: 1px;
+	font-size: 2em;
 }
 
