@@ -1,10 +1,31 @@
 $(document).ready(function(){
 
-var gamePlay = [];
+var gamePlay = [1,1,1,1,1,1,1,1,1];
 
 var currentPlayer = 1;
 
-function gameOn(){ 
+
+function playGame(){ 
+	$("#id").click(function(){
+		console.log("#id");
+		if (gamePlay[id] == 1) { 
+			if (currentPlayer == 1) {
+			$(this).toggleClass('playerOne')
+			gamePlay[id] = 2;
+			currentPlayer = 2;
+			}
+			else {
+			$(this).toggleClass('playerTwo')
+			gamePlay[id] = 3;
+			currentPlayer = 1;
+				}
+			}
+	})
+};
+
+playGame();
+
+/*function gameOn(){ 
 	$(".cell").click(function(){
 		if (currentPlayer == 1) {
 		$(this).toggleClass('playerOne');
@@ -18,7 +39,7 @@ function gameOn(){
 	});
 };
 
-gameOn();
+gameOn();*/
 
 /*var playerX ={
 	A: "no",
