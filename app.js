@@ -4,10 +4,10 @@ var gamePlay = [1,1,1,1,1,1,1,1,1];
 
 var currentPlayer = 1;
 
-
 function playGame(){ 
-	$("#id").click(function(){
-		console.log("#id");
+	$('.cell').click(function(){
+		var id = $(this).attr('id');
+		console.log(id);
 		if (gamePlay[id] == 1) { 
 			if (currentPlayer == 1) {
 			$(this).toggleClass('playerOne')
