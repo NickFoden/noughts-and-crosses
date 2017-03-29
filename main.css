@@ -1,1 +1,14 @@
-main.css
+#gameBoard{
+	height: auto;
+	width: 75%;
+	display: inline-block;
+}
+
+.cell{
+	width: 100px;
+	height: 100px;
+	background-color: rgb(244,66,194);
+	border-color: black;
+	border-width: 1px;
+}
+
