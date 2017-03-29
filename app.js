@@ -1,24 +1,156 @@
-$(document).ready(function){
+$(document).ready(function(){
 
-var playerX =[];
-var playerY =[];
+var gamePlay = [];
 
-var gamePlay = {};
+var currentPlayer = 1;
 
-function gameOn(){
-$('.cell').click(function(){
-	$(this).toggleClass('playerOne');
-});
-$('.cell').click(function(){
-	$(this).toggleClass('playerTwo');
-});
+function gameOn(){ 
+	$(".cell").click(function(){
+		if (currentPlayer == 1) {
+		$(this).toggleClass('playerOne');
+			currentPlayer = 2;
+		}
+		else {
+		$(this).toggleClass('playerTwo');
+		currentPlayer =1;
+		}
 
-}
+	});
+};
 
 gameOn();
+
+/*var playerX ={
+	A: "no",
+	B: "no",
+	C: "no",
+	D: "no",
+	E: "no",
+	F: "no",
+	G: "no",
+	H: "no",
+	I: "no",
+};
+//playerOne
+var playerY ={
+	A: "no",
+	B: "no",
+	C: "no",
+	D: "no",
+	E: "no",
+	F: "no",
+	G: "no",
+	H: "no",
+	I: "no",
+};
+//playerTwo
+*/
+
+/*
+function gameOn(){
+$('#A').click(function(){
+	if (currentPlayer == 1) {
+	$(this).toggleClass('playerOne');
+	currentPlayer = 2;
+	}
+	else {
+	$(this).toggleClass('playerTwo');
+	currentPlayer =1;
+	}
+});
+
+$('#B').click(function(){
+	if (currentPlayer == 1) {
+	$(this).toggleClass('playerOne');
+	currentPlayer = 2;
+	}
+	else {
+	$(this).toggleClass('playerTwo');
+	currentPlayer =1;
+	}
+});
+
+$('#C').click(function(){
+	if (currentPlayer == 1) {
+	$(this).toggleClass('playerOne');
+	currentPlayer = 2;
+	}
+	else {
+	$(this).toggleClass('playerTwo');
+	currentPlayer =1;
+	}
+});
+
+$('#D').click(function(){
+	if (currentPlayer == 1) {
+	$(this).toggleClass('playerOne');
+	currentPlayer = 2;
+	}
+	else {
+	$(this).toggleClass('playerTwo');
+	currentPlayer =1;
+	}
+});
+
+$('#E').click(function(){
+	if (currentPlayer == 1) {
+	$(this).toggleClass('playerOne');
+	currentPlayer = 2;
+	}
+	else {
+	$(this).toggleClass('playerTwo');
+	currentPlayer =1;
+	}
+});
+
+$('#F').click(function(){
+	if (currentPlayer == 1) {
+	$(this).toggleClass('playerOne');
+	currentPlayer = 2;
+	}
+	else {
+	$(this).toggleClass('playerTwo');
+	currentPlayer =1;
+	}
+});
+
+$('#G').click(function(){
+	if (currentPlayer == 1) {
+	$(this).toggleClass('playerOne');
+	currentPlayer = 2;
+	}
+	else {
+	$(this).toggleClass('playerTwo');
+	currentPlayer =1;
+	}
+
+});
+
+$('#H').click(function(){
+	if (currentPlayer == 1) {
+	$(this).toggleClass('playerOne');
+	currentPlayer = 2;
+	}
+	else {
+	$(this).toggleClass('playerTwo');
+	currentPlayer =1;
+	}
+});
+
+$('#I').click(function(){
+	if (currentPlayer == 1) {
+	$(this).toggleClass('playerOne');
+	currentPlayer = 2;
+	}
+	else {
+	$(this).toggleClass('playerTwo');
+	currentPlayer =1;
+	}
+});
+
+}*/
 
 /*$('.cell').click(function(){
 	$(this).toggleClass('playerOne');
 });*/
-
-}
+});
