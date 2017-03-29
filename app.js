@@ -4,8 +4,12 @@ var gamePlay = [1,1,1,1,1,1,1,1,1];
 
 var currentPlayer = 1;
 
+var youWinOne = "PLAYER ONE WINS!";
+var youWinTwo = "PLAYER TWO WINS!";
+
 function playGame(){ 
 	$('.cell').click(function(){
+		grade();
 		var id = $(this).attr('id');
 		console.log(id);
 		if (gamePlay[id] == 1) { 
@@ -22,6 +26,12 @@ function playGame(){
 			}
 	})
 };
+
+function grade(){
+	if (gamePlay == [2,2,2,3,3,3,1,1,1]) {
+		$(".winner").html(youWinOne);
+	}
+}
 
 playGame();
 
