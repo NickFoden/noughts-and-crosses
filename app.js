@@ -48,7 +48,7 @@ function grade(){
 			}
 		};
 		if (gradeGame[0][0] === gradeGame[1][1] && gradeGame[0][0] === gradeGame[2][2]) {
-			//diagnols
+			//diagonals
 			if (gradeGame[0][0] === 1) {
 				$(".winner").html(youWinOne);
 			}
@@ -57,7 +57,7 @@ function grade(){
 			}
 		};
 		if (gradeGame[0][2] === gradeGame[1][1] && gradeGame[0][2] === gradeGame[2][0]) {
-			//diagnols
+			//diagonals
 			if (gradeGame[0][2] === 1) {
 				$(".winner").html(youWinOne);
 			}
