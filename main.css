@@ -2,7 +2,6 @@
 	width: 100px;
 	height: 100px;
 	background-color: rgb(244,66,194);
-	border-width: 1px;
 }
 
 
@@ -10,7 +9,6 @@
 	width: 100px;
 	height: 100px;
 	background-color: rgb(36,226,49);
-	border-width: 1px;
 	font-size: 2em;
 }
 
@@ -18,7 +16,6 @@
 	width: 100px;
 	height: 100px;
 	background-color: rgb(0,0,0);
-	border-width: 1px;
 	font-size: 2em;
 }
 
