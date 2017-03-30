@@ -9,14 +9,12 @@
 	width: 100px;
 	height: 100px;
 	background-color: rgb(36,226,49);
-	font-size: 2em;
 }
 
 .playerTwo{
 	width: 100px;
 	height: 100px;
 	background-color: rgb(0,0,0);
-	font-size: 2em;
 }
 
 .winner {
