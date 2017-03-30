@@ -4,7 +4,6 @@
 	background-color: rgb(244,66,194);
 }
 
-
 .playerOne{
 	width: 100px;
 	height: 100px;
@@ -17,6 +16,24 @@
 	background-color: rgb(0,0,0);
 }
 
-.winner {
+.winner{
 	font-size: 5em;
+}
+.winnerOne{
+	text-decoration-color: rgb(36,226,49);
+}
+.winnerTwo{
+	text-decoration-color: rgb(0,0,0);
+}
+
+a:link{
+	text-decoration: none;
+	color: black;
+}
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	text-decoration: underline;
 }
