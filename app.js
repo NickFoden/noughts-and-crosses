@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+"use strict";
+
+var gamePlay = [];
 var gamePlay = [1,1,1,1,1,1,1,1,1];
 
 var currentPlayer = 1;
@@ -9,31 +12,41 @@ var youWinTwo = "PLAYER TWO WINS!";
 
 function playGame(){ 
 	$('.cell').click(function(){
-		grade();
 		var id = $(this).attr('id');
+		parseInt(id);
 		console.log(id);
 		if (gamePlay[id] == 1) { 
 			if (currentPlayer == 1) {
-			$(this).toggleClass('playerOne')
+			$(this).toggleClass('playerOne');
 			gamePlay[id] = 2;
 			currentPlayer = 2;
 			}
 			else {
-			$(this).toggleClass('playerTwo')
+			$(this).toggleClass('playerTwo');
 			gamePlay[id] = 3;
 			currentPlayer = 1;
 				}
 			}
 	})
+	grade();
 };
 
 function grade(){
-	if (gamePlay == [2,2,2,3,3,3,1,1,1]) {
+	if (gamePlay === [2,2,2,3,3,1,1,1,1] || [3,3,3,2,2,2,1,1,1] || [1,1,1,2,2,2,3,3,3,3]){
 		$(".winner").html(youWinOne);
-	}
-}
+		}
+	
+	else if (gamePlay === [3,3,3,2,1,2,1,2,1] || [2,1,2,3,3,3,1,2,1]) {
+		$(".winner").html(youWinTwo);
+		}
+	else{
+
+		}
+};
 
 playGame();
+
+});
 
 /*function gameOn(){ 
 	$(".cell").click(function(){
@@ -184,4 +197,3 @@ $('#I').click(function(){
 /*$('.cell').click(function(){
 	$(this).toggleClass('playerOne');
 });*/
-});
