@@ -20,10 +20,10 @@
 	font-size: 5em;
 }
 .winnerOne{
-	text-decoration-color: rgb(36,226,49);
+	color: rgb(36,226,49);
 }
 .winnerTwo{
-	text-decoration-color: rgb(0,0,0);
+	color: rgb(0,0,0);
 }
 
 a:link{

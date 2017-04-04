@@ -23,16 +23,26 @@ $('.cell').click(function(){
 	grade();
 })
 
+function oneWin(){
+	$(".winner").addClass("winnerOne");
+	$(".winner").html(youWinOne);
+}
+
+function twoWin(){
+	$(".winner").addClass("winnerTwo");
+	$(".winner").html(youWinTwo);
+}
+
 function grade(){
 	var gradeGame = [ [gamePlay[0], gamePlay[1], gamePlay[2]], [gamePlay[3], gamePlay[4], gamePlay[5]], [gamePlay[6], gamePlay[7], gamePlay[8]] ];
 		for (var i = 0; i<=2; i++) {
 			//columns
 			if (gradeGame[0][i] === gradeGame[1][i] && gradeGame[0][i] === gradeGame[2][i]) {
 				if (gradeGame[0][i] === 1) {
-					$(".winner").html(youWinOne);
+					oneWin();
 				}
 				else if (gradeGame[0][i] === 2) {
-					$(".winner").html(youWinTwo);
+					twoWin();
 				}
 			}
 		};
@@ -40,9 +50,11 @@ function grade(){
 			//rows
 			if (gradeGame[i][0] === gradeGame[i][1] && gradeGame[i][0] === gradeGame[i][2]) {
 				if (gradeGame[i][0] === 1) {
+					$(".winner").addClass("winnerOne");
 					$(".winner").html(youWinOne);
 				}
 				else if (gradeGame[i][0] === 2) {
+					$(".winner").addClass("winnerTwo");
 					$(".winner").html(youWinTwo);
 				}
 			}
@@ -50,18 +62,22 @@ function grade(){
 		if (gradeGame[0][0] === gradeGame[1][1] && gradeGame[0][0] === gradeGame[2][2]) {
 			//diagonals
 			if (gradeGame[0][0] === 1) {
+				$(".winner").addClass("winnerOne");
 				$(".winner").html(youWinOne);
 			}
 			else if (gradeGame[0][0] === 2) {
+				$(".winner").addClass("winnerTwo");
 				$(".winner").html(youWinTwo);
 			}
 		};
 		if (gradeGame[0][2] === gradeGame[1][1] && gradeGame[0][2] === gradeGame[2][0]) {
 			//diagonals
 			if (gradeGame[0][2] === 1) {
+				$(".winner").addClass("winnerOne");
 				$(".winner").html(youWinOne);
 			}
 			else if (gradeGame[0][2] === 2) {
+				$(".winner").addClass("winnerTwo");
 				$(".winner").html(youWinTwo);
 			}
 		};
